@@ -329,6 +329,18 @@
 					</a>
 				</li>
 				@endif
+				<li class="nav-item nav-item-sidebar permission-BATTERIES_TRACK_CHARGE_CYCLE"
+					data-toggle="tooltip"
+					data-placement="right"
+					title="{{ $__t('kroger') }}"
+					data-nav-for-page="kroger">
+					<a class="nav-link discrete-link"
+						href="{{ $U('/kroger') }}">
+						<i class="fas fa-receipt"></i>
+						<span class="nav-link-text">{{ $__t('Kroger Import') }}</span>
+					</a>
+				</li>
+
 
 				@php $firstUserentity = true; @endphp
 				@foreach($userentitiesForSidebar as $userentity)
