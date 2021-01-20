@@ -1,0 +1,10 @@
+[Unit]
+Description=Grocy Alpine Container
+
+[Service]
+LimitNOFILE=100000
+ExecStart=/usr/bin/systemd-nspawn --machine=test_container --directory=/var/lib/machines/alpine-grocy -b
+Restart=always
+
+[Install]
+Also=dbus.service
