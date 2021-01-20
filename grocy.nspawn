@@ -5,6 +5,7 @@ Bind=/opt/grocy:/grocy
 Boot=no
 Parameters=php -S 127.0.0.1:9283
 WorkingDirectory=/grocy/public
+PrivateUsers=no
 
 [Network]
 Private=no
