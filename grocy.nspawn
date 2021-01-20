@@ -1,0 +1,11 @@
+[Files]
+Bind=/opt/grocy:/grocy
+
+[Exec]
+Boot=no
+Parameters=php -S 127.0.0.1:9283
+WorkingDirectory=/grocy/public
+
+[Network]
+Private=no
+VirtualEthernet=no
