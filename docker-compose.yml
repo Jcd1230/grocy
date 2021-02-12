@@ -1,0 +1,13 @@
+# vim: set shiftwidth=2 tabstop=2 softtabstop=-1 expandtab:
+version: "3.8"
+services:
+  grocy:
+    image: alpine:latest
+    working_dir: /grocy
+    command: "./launch-alpine.sh"
+    init: true
+    volumes:
+      - ./:/grocy
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 9283:9283
